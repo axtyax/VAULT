@@ -1,0 +1,15 @@
+The 'testing' directory contains code that serves as a basic demo
+of the viability of the algorithm.
+
+General Notes / Ideas:
+
+	- The algorithm is essentially a perfect hashing algorithm. The objective is to map a space of strings to a smaller space of integer timestamps
+		- Timestamps should be expressed in minutes after the very first document is pushed
+
+	- Documents of words (in the same language, at least) contain many commonalities. The algorithm could adapt to slightly modify existing routines
+	  accomodate new documents, on the basis that slight word changes cause changes in output timestamp.
+
+
+Algorithm Notes / Ideas:
+	
+	- An adaptive "operation stack", where some number of operations are performed successively throughout each input string
